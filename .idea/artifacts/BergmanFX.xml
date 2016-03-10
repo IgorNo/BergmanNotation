@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="dm.par" name="BergmanFX">
+    <output-path>$PROJECT_DIR$/out/artifacts/BergmanFX</output-path>
+    <root id="archive" name="" />
+  </artifact>
+</component>

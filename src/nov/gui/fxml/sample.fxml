@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nov.gui.controllers.Controller">
+   <children>
+      <HBox prefHeight="381.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="370.0" prefWidth="269.0">
+               <children>
+                  <Label text="Decimal Notation:">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Number 1">
+                     <VBox.margin>
+                        <Insets left="10.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtDecNum1" text="0">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label layoutX="20.0" layoutY="90.0" text="Number 2">
+                     <VBox.margin>
+                        <Insets left="10.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtDecNum2" layoutX="20.0" layoutY="107.0" text="0">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label layoutX="20.0" layoutY="152.0" text="Result">
+                     <VBox.margin>
+                        <Insets left="10.0" right="20.0" top="50.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtDecRes" editable="false" layoutX="20.0" layoutY="169.0">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="370.0" prefWidth="327.0">
+               <children>
+                  <Label text="Bergman Notation:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Number 1">
+                     <VBox.margin>
+                        <Insets left="10.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtBerNum1" editable="false">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label layoutX="20.0" layoutY="90.0" text="Number 2">
+                     <VBox.margin>
+                        <Insets left="10.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtBerNum2" editable="false" layoutX="20.0" layoutY="107.0">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label layoutX="20.0" layoutY="152.0" prefHeight="17.0" prefWidth="39.0" text="Result">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="50.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtBerRes" editable="false" layoutX="20.0" layoutY="169.0">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label layoutX="20.0" layoutY="244.0" prefHeight="17.0" prefWidth="62.0" text="to Decimal">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtBerToDec" editable="false" layoutX="20.0" layoutY="261.0">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </children></HBox>
+      <HBox prefHeight="84.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="btnConvert" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#convert" prefWidth="90.0" text="Convert">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnAdd" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#add" prefWidth="90.0" text="Add">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnMultiply" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#multiply" prefWidth="90.0" text="Multiply">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnExit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exit" prefWidth="90.0" text="Exit">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="80.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
